@@ -9,9 +9,10 @@ bool Collectible::isCollected() {
 }
 
 Collectible::Collectible() {
-
+    this->collected = false;
 }
 
 void Collectible::collect() {
-
+    this->collected = true;
+    // Todo call GameAPI pour despawner le collectible
 }
