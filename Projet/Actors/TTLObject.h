@@ -14,6 +14,8 @@ private:
 
 public:
     TTLObject();
+    int getTTL();
+    void setTTL(int ttl);
 };
 
 

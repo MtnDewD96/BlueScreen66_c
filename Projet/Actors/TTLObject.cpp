@@ -7,3 +7,11 @@
 TTLObject::TTLObject() {
 
 }
+
+int TTLObject::getTTL() {
+    return this->ttl;
+}
+
+void TTLObject::setTTL(int ttl) {
+    this->ttl = ttl;
+}
