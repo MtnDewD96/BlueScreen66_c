@@ -5,8 +5,12 @@
 #ifndef PROJET_PLAYER_H
 #define PROJET_PLAYER_H
 
+#include "Actor.h"
 
-class Player {
+#define playerStartingHealth 3
+#define playerStartingScore 0
+
+class Player : public Actor {
 private:
     int score;
     int health;
@@ -17,6 +21,8 @@ public:
     void resetScore();
     void decreaseHealth();
     void resetHealth();
+    int getHealth();
+    int getScore();
 
 };
 
